@@ -3,6 +3,7 @@ import Mainlayout from "../Layout/Mainlayout";
 import Home from "../Pages/Home/Home";
 import Donetions from "../Pages/Home/Donetions/Donetions";
 import Statistics from "../Pages/Home/Statistics/Statistics";
+import DonationDetails from "../Pages/Home/DonationDetails/DonationDetails";
 
 const myCreatedRoute= createBrowserRouter([
 {
@@ -23,6 +24,13 @@ const myCreatedRoute= createBrowserRouter([
    {
     path:"/statistics",
     element:<Statistics></Statistics>
+   },
+   {
+    path:"/details/:id",
+    element:<DonationDetails></DonationDetails>,
+    loader:()=>fetch('/Donets.json')
+    
+
    }
    
    ]

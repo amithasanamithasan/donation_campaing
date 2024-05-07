@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 
 
 
 const Donetscard = ({Donet}) => {
     const {id,picture,title, price,title_color, category,description,card_bg,text_button_bg,category_bg} = Donet||{}
     return (
+   <Link to={`/details/${id}`}>
+
         <div>
    <div
   className="relative flex max-w-[24rem] flex-col overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md" style={{ backgroundColor: `${card_bg}` }}>
@@ -32,6 +35,8 @@ const Donetscard = ({Donet}) => {
 </div>  
 
 </div>
+</Link>
+
     );
 };
 
