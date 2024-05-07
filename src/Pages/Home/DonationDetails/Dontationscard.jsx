@@ -5,15 +5,14 @@ const Dontationscard = ({data}) => {
     
     const {picture, title, price, description, text_button_bg ,title_color} = data;
     // console.log(data);
-    const [clicked, setClicked] = useState (false);
+    const [clicked, setClicked] = useState(false);
     const handleDonations = () => {
         // toast("Donation succeed !");
         toast.success("Donation succeed !");
         //  {
         //  position: toast.POSITION.BOTTOM_RIGHT
         // });
-    
-        saveDonations(parseInt(id))
+
         setClicked(true)
     }
     
