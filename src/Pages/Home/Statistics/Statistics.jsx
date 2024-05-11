@@ -1,11 +1,11 @@
-
+import React from 'react';
 
 const Statistics = () => {
-    return (
-        <div>
-            This is my statistics Pages
-        </div>
-    );
+  return (
+    <div>
+      ami bujtaci na
+    </div>
+  );
 };
 
 export default Statistics;

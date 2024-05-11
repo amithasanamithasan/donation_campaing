@@ -1,54 +1,71 @@
-import { NavLink } from "react-router-dom";
-import Logo from "./Logo/Logo";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ import { NavLink } from "react-router-dom";
+ import Logo from "./Logo/Logo";
 
 
 const Navbar = () => {
     return (
         <div className=" font-serif  ">
-        <nav>
+         <nav>
       
-        <ul className=" flex justify-end gap-5 py-6 mr-4 px-5  shadow-sm shadow-slate-400 ">
-         <Logo></Logo>
-        <li>
+         <ul className=" flex justify-end gap-5 py-6 mr-4 px-5  shadow-sm shadow-slate-400 ">
+          <Logo></Logo>
+         <li>
     <NavLink
-      to="/"
-     className={({ isActive, isPending }) =>
-      isPending ? "pending" : isActive ? "text-red-600 underline" : ""
-        }
->
-  Home
-  </NavLink>
-  </li>
-  <li>
-  <NavLink
-      to="/donetions"
-     className={({ isActive, isPending }) =>
-      isPending ? "pending" : isActive ? "text-red-600 underline" : ""
-        }
->
+       to="/"
+      className={({ isActive, isPending }) =>
+         isPending ? "pending" : isActive ? "text-red-600 underline" : ""
+         }
+ >
+   Home
+   </NavLink>
+   </li>
+   <li>
+   <NavLink
+       to="/donetions"
+      className={({ isActive, isPending }) =>
+       isPending ? "pending" : isActive ? "text-red-600 underline" : ""
+         }
+ >
   Donetion
 
 
-</NavLink>
-  </li>
+ </NavLink>
+   </li>
 
-<li>
-<NavLink
-      to="/statistics"
-     className={({ isActive, isPending }) =>
-      isPending ? "pending" : isActive ? "text-red-600 underline" : ""
-        }
->
-  Statistics
+ <li>
+ <NavLink
+       to="/statistics"
+      className={({ isActive, isPending }) =>
+       isPending ? "pending" : isActive ? "text-red-600 underline" : ""
+         }
+ >
+   Statistics
 
   
-</NavLink>
-</li>
-       </ul>
+ </NavLink>
+ </li>
+        </ul>
      
-</nav>
-</div>
+ </nav>
+ </div>
     );
-};
+ };
 
-export default Navbar;
+ export default Navbar;

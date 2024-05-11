@@ -23,7 +23,8 @@ const myCreatedRoute= createBrowserRouter([
    },
    {
     path:"/statistics",
-    element:<Statistics></Statistics>
+    element:<Statistics></Statistics>,
+    loader:()=>fetch('/Donets.json')
    },
    {
     path:"/details/:id",

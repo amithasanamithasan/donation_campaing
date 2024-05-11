@@ -6,19 +6,23 @@ import Donetcard from "./Donetcard.jsx/Donetcard";
 
 const Donetions = () => {
     const [donations, setDonations] = useState([]);
+   
     const [isShow, setIsShow] = useState(false);
 
     useEffect(() => {
         const DonationsItems = JSON.parse(localStorage.getItem('Donations'));
+
         if (DonationsItems) {
             setDonations(DonationsItems);
         } else {
             console.log('no data found');
+         
         }
     }, []);
 
     return (
         <div>
+           
             <div className="grid grid-cols-2 justify-center ">
                 {isShow ? (
                     donations.map((data) => (
@@ -32,11 +36,14 @@ const Donetions = () => {
                     ))
                 )}
             </div>
-            <button onClick={() => setIsShow(!isShow)} className="px-5 bg-cyan-700 max-auto ">
-                {isShow ? "HIDE" : "SEE ALL"}
-            </button>
+            {donations.length > 2 && (
+                <button onClick={() => setIsShow(!isShow)} className="px-5 bg-cyan-700 max-auto text-center ">
+                    {isShow ? "HIDE" : "SEE ALL"}
+                </button>
+            )}
+            
         </div>
-    );
+);
 };
 
 export default Donetions;
