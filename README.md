@@ -8,3 +8,4 @@
 4. Statistics Page: A dedicated statistics page displays the donation percentages relative to the total donations collected on the website, offering transparency and insight.
 
 5. Category-Based Search: Users can conveniently search for specific categories on the homepage to find causes that align with their interests.
+##-[Created by Amit hasan Faysal]
