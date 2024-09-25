@@ -1,5 +1,7 @@
 const getDonations = () => {
+    
     const donation = localStorage.getItem('donation');
+
     if(donation){
        return JSON.parse(donation);
     }

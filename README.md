@@ -1,8 +1,10 @@
-# React + Vite
+# Project Features
+1. Category-Based Donations: Users have the ability to make donations according to their chosen categories.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2. Donation Progress: On the donation page, users can track the number of donations already made.
 
-Currently, two official plugins are available:
+3. Four Donation Categories: The website offers four distinct categories for donations, providing users with various options to support causes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+4. Statistics Page: A dedicated statistics page displays the donation percentages relative to the total donations collected on the website, offering transparency and insight.
+
+5. Category-Based Search: Users can conveniently search for specific categories on the homepage to find causes that align with their interests.
